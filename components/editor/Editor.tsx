@@ -792,19 +792,37 @@ export function Editor() {
                           <span className="text-[9px] uppercase tracking-[0.2em] text-ivory-dim/35">
                             {String(i + 1).padStart(2, "0")} · {m.type}
                           </span>
-                          <RemoveButton
-                            label="O‘chirish"
-                            onClick={() =>
-                              setDraft((d) =>
-                                d
-                                  ? {
-                                      ...d,
-                                      memories: d.memories.filter((x) => x.id !== m.id),
-                                    }
-                                  : d,
-                              )
-                            }
-                          />
+                          <div className="flex items-center gap-2">
+                            {m.type === "photo" && (
+                              <Select
+                                value={m.ratio ?? "square"}
+                                onChange={(e) =>
+                                  patchMemory(m.id, {
+                                    ratio: e.target.value as Memory["ratio"],
+                                  })
+                                }
+                                className="w-auto px-2.5 py-1 text-[10px]"
+                                aria-label="Rasm nisbati"
+                              >
+                                <option value="square">kvadrat</option>
+                                <option value="portrait">vertikal</option>
+                                <option value="wide">gorizontal</option>
+                              </Select>
+                            )}
+                            <RemoveButton
+                              label="O‘chirish"
+                              onClick={() =>
+                                setDraft((d) =>
+                                  d
+                                    ? {
+                                        ...d,
+                                        memories: d.memories.filter((x) => x.id !== m.id),
+                                      }
+                                    : d,
+                                )
+                              }
+                            />
+                          </div>
                         </div>
                         <Input
                           value={m.title ?? ""}
@@ -1027,6 +1045,15 @@ export function Editor() {
                       </Link>
                     </div>
                   </div>
+                  {(draft.coverImage.startsWith("data:") ||
+                    draft.memories.some((m) => m.src.startsWith("data:"))) && (
+                    <p className="mt-3 rounded-sm border border-gold/25 bg-gold/[0.05] px-3 py-2 text-[10px] leading-relaxed text-gold/80">
+                      Diqqat: yuklangan rasmlar JSON ichida base64 ko‘rinishida
+                      ketadi va faylni og‘irlashtiradi. Mijozga topshirishdan oldin
+                      ularni `public/uploads/...` ga ko‘chirib, havola (URL) bilan
+                      almashtiring.
+                    </p>
+                  )}
                   <p className="mt-3 text-[10px] leading-relaxed text-ivory-dim/35">
                     Eslatma: mehmonlar kitobi va yuklangan rasmlar hozircha brauzer
                     xotirasida saqlanadi. Serverga ulash uchun README’dagi
