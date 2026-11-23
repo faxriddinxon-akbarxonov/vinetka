@@ -1,0 +1,143 @@
+{
+  "slug": "9-b-2025",
+  "theme": "yulduz",
+  "school": "42-maktab",
+  "overline": "Chilonzor tumani 42-maktab",
+  "className": "9-B sinf",
+  "graduationYear": 2025,
+  "motto": "Yulduzlar ham birgalikda porlaydi.",
+  "coverImage": "/images/memory-yard.jpg",
+  "coverPosition": "center 55%",
+  "letter": {
+    "title": "Sinfim, mening yulduzlarim,",
+    "text": "Siz bilan o‘tgan to‘qqiz yil — mening hayotimning eng yorqin sahifasi. Endi yo‘llar ajraladi, lekin osmon bitta.\n\nQayerda bo‘lsangiz ham, bu sahifani oching va bir-biringizni eslang.",
+    "signature": "Gulnora Rahimova",
+    "role": "Sinf rahbari · Biologiya"
+  },
+  "graduates": [
+    {
+      "id": "b1",
+      "name": "Sevinch Abdullayeva",
+      "role": "Sinf sardori",
+      "quote": "Birga kulgan kunlarimiz eng yaxshi dars bo‘ldi."
+    },
+    {
+      "id": "b2",
+      "name": "Islom Norqulov",
+      "role": "Kelajakda muhandis",
+      "quote": "Robototexnika to‘garagi butun hayotimni o‘zgartirdi."
+    },
+    {
+      "id": "b3",
+      "name": "Gulnoza Salimova",
+      "role": "Kelajakda shifokor",
+      "quote": "Birinchi tibbiy yordamni shu maktabda o‘rgandim."
+    },
+    {
+      "id": "b4",
+      "name": "Rustam Yo‘ldoshev",
+      "role": "Sportchi",
+      "quote": "Yugurishni maktab hovlisida boshlaganman."
+    },
+    {
+      "id": "b5",
+      "name": "Zarina Toshpo‘latova",
+      "role": "Rassom",
+      "quote": "Doskadagi bo‘r izlari menga ilhom beradi."
+    },
+    {
+      "id": "b6",
+      "name": "Bekmurod Olimov",
+      "role": "Dasturchi",
+      "quote": "Birinchi o‘yinimni shu sinfda yaratdim."
+    },
+    {
+      "id": "b7",
+      "name": "Ma’rifat Qurbonova",
+      "role": "Shoira",
+      "quote": "Har bir satrim sizga bag‘ishlanadi."
+    },
+    {
+      "id": "b8",
+      "name": "Sanjar Halimov",
+      "role": "Fotograf",
+      "quote": "Bu sahifadagi rasmlarning yarmini men tushirganman."
+    }
+  ],
+  "teachers": [
+    {
+      "id": "bt1",
+      "name": "Gulnora Rahimova",
+      "role": "Biologiya o‘qituvchisi",
+      "quote": "Tabiatni sevgan odam odamlarni ham sevadi."
+    },
+    {
+      "id": "bt2",
+      "name": "Shuhrat Mirzayev",
+      "role": "Kimyo o‘qituvchisi",
+      "quote": "Har bir reaksiya sabr bilan boshlanadi."
+    }
+  ],
+  "memories": [
+    {
+      "id": "bm1",
+      "type": "photo",
+      "src": "/images/memory-yard.jpg",
+      "title": "Kuzgi hovli",
+      "caption": "Birinchi sentabr. Hammasi shu yerdan boshlangan.",
+      "ratio": "wide"
+    },
+    {
+      "id": "bm2",
+      "type": "photo",
+      "src": "/images/memory-classroom.jpg",
+      "title": "Biologiya xonasi",
+      "caption": "Eng sevimli dars va eng sevimli ustoz.",
+      "ratio": "portrait"
+    },
+    {
+      "id": "bm3",
+      "type": "photo",
+      "src": "/images/memory-flowers.jpg",
+      "title": "Gullar",
+      "caption": "Oxirgi qo‘ng‘iroq kuni.",
+      "ratio": "square"
+    }
+  ],
+  "timeline": [
+    {
+      "id": "by1",
+      "year": "2016",
+      "title": "Birinchi sinf",
+      "text": "Katta sumka, kichkina qadamlar."
+    },
+    {
+      "id": "by2",
+      "year": "2021",
+      "title": "Ekrandagi sinf",
+      "text": "Uyda qolgan bo‘lsak ham, birga o‘qdik."
+    },
+    {
+      "id": "by3",
+      "year": "2025",
+      "title": "To‘qqizinchi sinf",
+      "text": "Bu yil tugadi, hikoya esa davom etadi."
+    }
+  ],
+  "wishes": [
+    {
+      "id": "bw1",
+      "name": "Gulnora Rahimova",
+      "text": "Yulduzlarim, osmon sizniki.",
+      "createdAt": "2025-06-01"
+    }
+  ],
+  "closing": {
+    "title": "Yana birga bo‘lamiz",
+    "text": "Har bir yangi rasm bu sahifani yana bir bor jonlantiradi."
+  },
+  "contact": {
+    "phone": "+998 90 123 45 67",
+    "telegram": "@vinetka"
+  }
+}

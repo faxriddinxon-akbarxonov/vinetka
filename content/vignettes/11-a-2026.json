@@ -1,0 +1,252 @@
+{
+  "slug": "11-a-2026",
+  "theme": "oltin",
+  "school": "1-maktab",
+  "overline": "Navoiy nomidagi 1-umumta’lim maktabi",
+  "className": "11-A sinf",
+  "graduationYear": 2026,
+  "motto": "Biz birga yozgan yillar hech qachon tugamaydi.",
+  "coverImage": "/images/cover-graduation.jpg",
+  "coverPosition": "center 45%",
+  "audioUrl": "",
+  "letter": {
+    "title": "Aziz bolalarim,",
+    "text": "Sizni birinchi sinfda ko‘rgan kunim hamon ko‘z oldimda. Qo‘llaringizda gul, ko‘zlaringizda qo‘rquv va hayrat bor edi. Oradan o‘n bir yil o‘tdi — endi men sizga orqamni o‘girib, kelajagingizga qarab ketishingizni kuzatyapman.\n\nBu sahifaga yig‘ilgan har bir rasm, har bir video — sizning eng qimmat boyligingiz. Vaqt o‘tadi, xotiralar xiralashadi. Shuning uchun ularni shu yerda, bir joyda saqlang. Yillar o‘tib bir kuni ochib ko‘rasiz va yana o‘n yetti yoshga qaytasiz.\n\nMen siz bilan faxrlanaman. Har doim.",
+    "signature": "Zulfiya Ahmedova",
+    "role": "Sinf rahbari · Ona tili va adabiyoti"
+  },
+  "graduates": [
+    {
+      "id": "g1",
+      "name": "Dilnoza Karimova",
+      "role": "Sinf sardori",
+      "quote": "Sinfni boshqarishni emas, tinglashni o‘rgandim."
+    },
+    {
+      "id": "g2",
+      "name": "Jasur To‘xtayev",
+      "role": "Kelajakda dasturchi",
+      "quote": "Birinchi kodimni informatika xonasida yozgandim."
+    },
+    {
+      "id": "g3",
+      "name": "Madina Yusupova",
+      "role": "Kelajakda shifokor",
+      "quote": "Kimdir yordam so‘rasa, hech qachon indamay qolmayman."
+    },
+    {
+      "id": "g4",
+      "name": "Bekzod Rahimov",
+      "role": "Futbol jamoasi sardori",
+      "quote": "G‘alaba ham, mag‘lubiyat ham birga bo‘lgani uchun shirin."
+    },
+    {
+      "id": "g5",
+      "name": "Aziza Nabiyeva",
+      "role": "Shoira",
+      "quote": "Birinchi she’rimni doskada o‘qigan kunimni unutmayman."
+    },
+    {
+      "id": "g6",
+      "name": "Sardor Qodirov",
+      "role": "Kelajakda muhandis",
+      "quote": "Buzilgan narsalarni tuzatishga bolalikdan qiziqardim."
+    },
+    {
+      "id": "g7",
+      "name": "Nodira Ismoilova",
+      "role": "Rassom",
+      "quote": "Ranglar orqali gapirishni shu maktabda o‘rgandim."
+    },
+    {
+      "id": "g8",
+      "name": "Temur Aliyev",
+      "role": "Kelajakda uchuvchi",
+      "quote": "Har kuni tomga chiqib, osmonni kuzatardim."
+    },
+    {
+      "id": "g9",
+      "name": "Shahzoda Ergasheva",
+      "role": "Xonanda",
+      "quote": "Oxirgi qo‘ng‘iroqda butun sinf qo‘shiq aytdi."
+    },
+    {
+      "id": "g10",
+      "name": "Umid Sharipov",
+      "role": "Kinorejissyor",
+      "quote": "Telefonimdagi eng qadimgi video — bizning sinf."
+    },
+    {
+      "id": "g11",
+      "name": "Kamola Sattorova",
+      "role": "Tarjimon",
+      "quote": "Uch tilda gaplashish — dunyoga uchta eshik."
+    },
+    {
+      "id": "g12",
+      "name": "Aziz Mahmudov",
+      "role": "Tadbirkor",
+      "quote": "Birinchi savdo — maktab bozoridagi koptoklar edi."
+    },
+    {
+      "id": "g13",
+      "name": "Malika Tursunova",
+      "role": "Arxitektor",
+      "quote": "Maktab binosini chizganman, lekin hech qachon buzmayman."
+    },
+    {
+      "id": "g14",
+      "name": "Diyorbek Xolmatov",
+      "role": "Jurnalist",
+      "quote": "Doim savol berardim. Endi javob izlayman."
+    }
+  ],
+  "teachers": [
+    {
+      "id": "t0",
+      "name": "Zulfiya Ahmedova",
+      "role": "Sinf rahbari · Ona tili va adabiyoti",
+      "quote": "Sizni birinchi sinfda ko‘rgan kunim hamon ko‘z oldimda.",
+      "photo": ""
+    },
+    {
+      "id": "t1",
+      "name": "Ravshan Ergashev",
+      "role": "Matematika o‘qituvchisi",
+      "quote": "Har bir tenglamaning yechimi bor — siz ham istisno emassiz.",
+      "photo": ""
+    },
+    {
+      "id": "t2",
+      "name": "Nilufar Sodiqova",
+      "role": "Ingliz tili o‘qituvchisi",
+      "quote": "Til o‘rganish — boshqa odam bo‘lish emas, kattaroq odam bo‘lish.",
+      "photo": ""
+    },
+    {
+      "id": "t3",
+      "name": "Anvar Qosimov",
+      "role": "Tarix o‘qituvchisi",
+      "quote": "Tarixni bilgan odam o‘z hikoyasini yozishdan qo‘rqmaydi.",
+      "photo": ""
+    }
+  ],
+  "memories": [
+    {
+      "id": "m1",
+      "type": "photo",
+      "src": "/images/cover-graduation.jpg",
+      "title": "Oltin kun",
+      "caption": "2026-yil 25-may. Qopqoqlar havoga uchdi, vaqt bir zum to‘xtadi.",
+      "date": "25.05.2026",
+      "ratio": "wide"
+    },
+    {
+      "id": "m2",
+      "type": "photo",
+      "src": "/images/memory-corridor.jpg",
+      "title": "Uchinchi qavat",
+      "caption": "Qo‘ng‘iroq chalinardi-yu, hech kim ketishni xohlamasdi.",
+      "ratio": "portrait"
+    },
+    {
+      "id": "m3",
+      "type": "photo",
+      "src": "/images/memory-classroom.jpg",
+      "title": "Oxirgi dars",
+      "caption": "Doskada qolgan yozuv: “Bizni unutmang”.",
+      "ratio": "portrait"
+    },
+    {
+      "id": "m4",
+      "type": "video",
+      "src": "https://www.youtube.com/watch?v=LXb3EKWsInQ",
+      "poster": "/images/cover-graduation.jpg",
+      "title": "Bitiruv filmi (namuna video)",
+      "caption": "Bu joyga sinf filmingiz yoki bitiruv kechasi videosi qo‘yiladi.",
+      "date": "25.05.2026"
+    },
+    {
+      "id": "m5",
+      "type": "photo",
+      "src": "/images/memory-yard.jpg",
+      "title": "Hovli",
+      "caption": "Deraza ostida turgan velosipedlar — eng uzoq safarlarimiz shu yerdan boshlangan.",
+      "ratio": "portrait"
+    },
+    {
+      "id": "m6",
+      "type": "photo",
+      "src": "/images/memory-flowers.jpg",
+      "title": "Gullar va daftar",
+      "caption": "O‘qituvchilarga oxirgi marta gul olib kelgan kunimiz.",
+      "ratio": "square"
+    }
+  ],
+  "timeline": [
+    {
+      "id": "y1",
+      "year": "2015",
+      "title": "Birinchi qo‘ng‘iroq",
+      "text": "Katta qizil bank va yelkama sumka. Sinf xonasida yigirma besh notanish yuz."
+    },
+    {
+      "id": "y2",
+      "year": "2019",
+      "title": "Birinchi gastrol",
+      "text": "Kuzgi sayohat, avtobusdagi qo‘shiqlar va kech qolgan tartibsizlik."
+    },
+    {
+      "id": "y3",
+      "year": "2021",
+      "title": "Onlayn darslar",
+      "text": "Ekrandan ko‘rishardik, lekin baribir bir-birimizni his qilardik."
+    },
+    {
+      "id": "y4",
+      "year": "2024",
+      "title": "Maktab olimpiadasi",
+      "text": "Butun sinf birinchi o‘rinni qo‘lga kiritdi."
+    },
+    {
+      "id": "y5",
+      "year": "2026",
+      "title": "Oxirgi qo‘ng‘iroq",
+      "text": "Oq ko‘ylaklar, gullar, yig‘lash va hech qachon tugamas fasl."
+    },
+    {
+      "id": "y6",
+      "year": "2036",
+      "title": "Uchrashuv",
+      "text": "O‘n yildan keyin — yana shu yerda, yana shu sinf xonasida."
+    }
+  ],
+  "wishes": [
+    {
+      "id": "w1",
+      "name": "Dilnoza Karimova",
+      "text": "Yaxshi ko‘rgan odamlar, yaxshi ko‘rgan maktab. Bundan ziyod baxt bormi?",
+      "createdAt": "2026-05-25"
+    },
+    {
+      "id": "w2",
+      "name": "Zulfiya Ahmedova",
+      "text": "Kelajagingiz bizning orzuimizdan ham chiroyli bo‘lsin, azizlarim.",
+      "createdAt": "2026-05-25"
+    },
+    {
+      "id": "w3",
+      "name": "Jasur To‘xtayev",
+      "text": "Har safar bu sahifani ochganimda, yana bir marta maktabga boraman.",
+      "createdAt": "2026-05-26"
+    }
+  ],
+  "closing": {
+    "title": "Bu sahifa tugamaydi",
+    "text": "Rasmlar qo‘shiladi. Yangi xotiralar yoziladi. Sinfingizning hikoyasi shu yerda davom etadi."
+  },
+  "contact": {
+    "phone": "+998 90 123 45 67",
+    "telegram": "@vinetka"
+  }
+}
