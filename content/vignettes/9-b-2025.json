@@ -109,19 +109,22 @@
       "id": "by1",
       "year": "2016",
       "title": "Birinchi sinf",
-      "text": "Katta sumka, kichkina qadamlar."
+      "text": "Katta sumka, kichkina qadamlar.",
+      "photo": "/images/memory-classroom.jpg"
     },
     {
       "id": "by2",
       "year": "2021",
       "title": "Ekrandagi sinf",
-      "text": "Uyda qolgan bo‘lsak ham, birga o‘qdik."
+      "text": "Uyda qolgan bo‘lsak ham, birga o‘qdik.",
+      "photo": "/images/memory-corridor.jpg"
     },
     {
       "id": "by3",
       "year": "2025",
       "title": "To‘qqizinchi sinf",
-      "text": "Bu yil tugadi, hikoya esa davom etadi."
+      "text": "Bu yil tugadi, hikoya esa davom etadi.",
+      "photo": "/images/memory-yard.jpg"
     }
   ],
   "wishes": [

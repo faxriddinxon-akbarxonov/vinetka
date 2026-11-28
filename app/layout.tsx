@@ -5,6 +5,8 @@ import "@fontsource/cormorant-garamond/500.css";
 import "@fontsource/cormorant-garamond/600.css";
 import "@fontsource/cormorant-garamond/300-italic.css";
 import "@fontsource/cormorant-garamond/400-italic.css";
+import "@fontsource/caveat/500.css";
+import "@fontsource/caveat/700.css";
 import "@fontsource/manrope/300.css";
 import "@fontsource/manrope/400.css";
 import "@fontsource/manrope/500.css";

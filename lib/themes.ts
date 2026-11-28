@@ -25,6 +25,8 @@ export const THEMES: Record<ThemeId, ThemePreset> = {
       "--v-accent": "#D9B97B",
       "--v-accent-deep": "#B08D4F",
       "--v-line": "rgba(246,240,228,0.14)",
+      "--v-photo": "sepia(0.18) saturate(0.95) contrast(1.02)",
+      "--v-paper": "#F4ECDD",
     },
   },
   tong: {
@@ -41,6 +43,8 @@ export const THEMES: Record<ThemeId, ThemePreset> = {
       "--v-accent": "#A9803F",
       "--v-accent-deep": "#8A672F",
       "--v-line": "rgba(29,27,23,0.14)",
+      "--v-photo": "sepia(0.12) saturate(0.95)",
+      "--v-paper": "#FFFDF8",
     },
   },
   yulduz: {
@@ -57,6 +61,8 @@ export const THEMES: Record<ThemeId, ThemePreset> = {
       "--v-accent": "#B9CFEA",
       "--v-accent-deep": "#7FA3CC",
       "--v-line": "rgba(233,239,248,0.14)",
+      "--v-photo": "saturate(0.85) contrast(1.05)",
+      "--v-paper": "#EEF2F8",
     },
   },
   shaftoli: {
@@ -73,6 +79,26 @@ export const THEMES: Record<ThemeId, ThemePreset> = {
       "--v-accent": "#C1683F",
       "--v-accent-deep": "#9C4E2C",
       "--v-line": "rgba(43,29,22,0.14)",
+      "--v-photo": "sepia(0.2) saturate(1.05)",
+      "--v-paper": "#FFF9F3",
+    },
+  },
+  albom: {
+    id: "albom",
+    name: "Eski albom",
+    note: "Sarg‘aygan qog‘oz, sepiya rasmlar va qo‘lyozma — ota-onalar albomi hissi.",
+    light: true,
+    swatch: ["#EADFC8", "#7A4E2D", "#3A2A1C"],
+    vars: {
+      "--v-bg": "#EADFC8",
+      "--v-surface": "#F3EAD7",
+      "--v-ink": "#3A2A1C",
+      "--v-muted": "#7B6650",
+      "--v-accent": "#8A4F2A",
+      "--v-accent-deep": "#6B3B1E",
+      "--v-line": "rgba(58,42,28,0.18)",
+      "--v-photo": "sepia(0.55) saturate(0.85) contrast(1.05) brightness(0.98)",
+      "--v-paper": "#FBF6EA",
     },
   },
 };

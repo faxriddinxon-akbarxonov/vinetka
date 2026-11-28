@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Reveal } from "@/components/ui/Reveal";
 import { ShareButton } from "@/components/ui/ShareButton";
 import type { Vignette } from "@/lib/types";
+import { Confetti } from "./Confetti";
 
 export function Closing({ v }: { v: Vignette }) {
   return (
@@ -11,6 +12,8 @@ export function Closing({ v }: { v: Vignette }) {
         className="pointer-events-none absolute left-1/2 top-1/2 size-[560px] -translate-x-1/2 -translate-y-1/2 rounded-full opacity-[0.07] blur-[100px]"
         style={{ background: "var(--v-accent)" }}
       />
+
+      <Confetti />
 
       <div className="relative mx-auto max-w-3xl px-5 py-24 text-center sm:px-8 sm:py-32">
         <Reveal>

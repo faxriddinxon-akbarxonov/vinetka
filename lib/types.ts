@@ -1,4 +1,4 @@
-export type ThemeId = "oltin" | "tong" | "yulduz" | "shaftoli";
+export type ThemeId = "oltin" | "tong" | "yulduz" | "shaftoli" | "albom";
 
 export interface Person {
   id: string;
@@ -28,6 +28,8 @@ export interface TimelineItem {
   year: string;
   title: string;
   text?: string;
+  /** optional photo shown on the film-strip card */
+  photo?: string;
 }
 
 export interface Wish {

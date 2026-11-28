@@ -20,7 +20,7 @@ const FEATURES = [
   {
     icon: Palette,
     title: "Har sinfga o‘z dizayni",
-    text: "To‘rt tayyor uslub, maktab ranglari va logotipi. Bir xil shablon emas — sizning sinfingizning o‘z kayfiyati.",
+    text: "Besh tayyor uslub, maktab ranglari va logotipi. Bir xil shablon emas — sizning sinfingizning o‘z kayfiyati.",
   },
 ];
 

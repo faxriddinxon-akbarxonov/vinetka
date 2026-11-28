@@ -25,7 +25,7 @@
   ya’ni faqat o‘z brauzerida. Bu ataylab: backend qo‘shilmaguncha yolg‘on
   server ko‘rinishini bermaymiz.
 - **Dizayn** — `data-theme` emas, CSS o‘zgaruvchilari (`--v-bg`, `--v-accent`, …)
-  inline style orqali. Shu bilan bitta komponentlar to‘plami 4 xil ko‘rinishda
+  inline style orqali. Shu bilan bitta komponentlar to‘plami 5 xil ko‘rinishda
   ishlaydi va yangi uslub qo‘shish arzon.
 
 ## 2. Production maqsadli arxitektura
@@ -164,7 +164,7 @@ create table orders (
 ## 3. Yo‘l xaritasi
 
 ### Bosqich 1 — shablon (bajarildi)
-- [x] Landing, 4 dizayn, to‘liq vinetka sahifasi
+- [x] Landing, 5 dizayn, to‘liq vinetka sahifasi
 - [x] Konstruktor + avtosaqlash + JSON eksport
 - [x] Lightbox, video, tabriklar, ulashish, SEO
 

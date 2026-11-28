@@ -188,37 +188,43 @@
       "id": "y1",
       "year": "2015",
       "title": "Birinchi qo‘ng‘iroq",
-      "text": "Katta qizil bank va yelkama sumka. Sinf xonasida yigirma besh notanish yuz."
+      "text": "Katta qizil bank va yelkama sumka. Sinf xonasida yigirma besh notanish yuz.",
+      "photo": "/images/memory-classroom.jpg"
     },
     {
       "id": "y2",
       "year": "2019",
       "title": "Birinchi gastrol",
-      "text": "Kuzgi sayohat, avtobusdagi qo‘shiqlar va kech qolgan tartibsizlik."
+      "text": "Kuzgi sayohat, avtobusdagi qo‘shiqlar va kech qolgan tartibsizlik.",
+      "photo": "/images/memory-corridor.jpg"
     },
     {
       "id": "y3",
       "year": "2021",
       "title": "Onlayn darslar",
-      "text": "Ekrandan ko‘rishardik, lekin baribir bir-birimizni his qilardik."
+      "text": "Ekrandan ko‘rishardik, lekin baribir bir-birimizni his qilardik.",
+      "photo": "/images/memory-yard.jpg"
     },
     {
       "id": "y4",
       "year": "2024",
       "title": "Maktab olimpiadasi",
-      "text": "Butun sinf birinchi o‘rinni qo‘lga kiritdi."
+      "text": "Butun sinf birinchi o‘rinni qo‘lga kiritdi.",
+      "photo": "/images/memory-flowers.jpg"
     },
     {
       "id": "y5",
       "year": "2026",
       "title": "Oxirgi qo‘ng‘iroq",
-      "text": "Oq ko‘ylaklar, gullar, yig‘lash va hech qachon tugamas fasl."
+      "text": "Oq ko‘ylaklar, gullar, yig‘lash va hech qachon tugamas fasl.",
+      "photo": "/images/cover-graduation.jpg"
     },
     {
       "id": "y6",
       "year": "2036",
       "title": "Uchrashuv",
-      "text": "O‘n yildan keyin — yana shu yerda, yana shu sinf xonasida."
+      "text": "O‘n yildan keyin — yana shu yerda, yana shu sinf xonasida.",
+      "photo": "/images/memory-classroom.jpg"
     }
   ],
   "wishes": [

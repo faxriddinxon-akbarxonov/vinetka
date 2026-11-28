@@ -178,6 +178,21 @@ export function Editor() {
     }
   };
 
+  const uploadPersonPhoto = async (
+    list: "graduates" | "teachers",
+    id: string,
+    file: File,
+  ) => {
+    setUploadMsg("");
+    try {
+      // portraits are small on screen — 640px keeps localStorage light
+      const dataUrl = await compressImage(file, 640, 0.8);
+      patchPerson(list, id, { photo: dataUrl });
+    } catch (err) {
+      setUploadMsg(err instanceof Error ? err.message : "Yuklab bo‘lmadi.");
+    }
+  };
+
   const downloadJson = () => {
     if (!draft) return;
     const blob = new Blob([JSON.stringify(draft, null, 2)], {
@@ -602,6 +617,12 @@ export function Editor() {
                           onClick={() => removePerson("graduates", p.id)}
                         />
                       </div>
+                      <PhotoPicker
+                        photo={p.photo}
+                        name={p.name}
+                        onFile={(f) => uploadPersonPhoto("graduates", p.id, f)}
+                        onClear={() => patchPerson("graduates", p.id, { photo: undefined })}
+                      />
                       <div className="grid gap-3 sm:grid-cols-[1fr_1fr]">
                         <Field label="Ism familiya">
                           <Input
@@ -668,6 +689,12 @@ export function Editor() {
                           onClick={() => removePerson("teachers", p.id)}
                         />
                       </div>
+                      <PhotoPicker
+                        photo={p.photo}
+                        name={p.name}
+                        onFile={(f) => uploadPersonPhoto("teachers", p.id, f)}
+                        onClear={() => patchPerson("teachers", p.id, { photo: undefined })}
+                      />
                       <div className="grid gap-3 sm:grid-cols-2">
                         <Field label="Ism familiya">
                           <Input
@@ -1127,6 +1154,57 @@ export function Editor() {
           </aside>
         </div>
       </div>
+    </div>
+  );
+}
+
+function PhotoPicker({
+  photo,
+  name,
+  onFile,
+  onClear,
+}: {
+  photo?: string;
+  name: string;
+  onFile: (file: File) => void;
+  onClear: () => void;
+}) {
+  const input = useRef<HTMLInputElement>(null);
+  return (
+    <div className="flex items-center gap-3">
+      <button
+        type="button"
+        onClick={() => input.current?.click()}
+        className="relative grid size-14 shrink-0 place-items-center overflow-hidden rounded-sm border border-dashed border-white/20 text-ivory-dim/50 transition-colors hover:border-gold/60 hover:text-gold"
+        aria-label={photo ? "Rasmni almashtirish" : "Rasm yuklash"}
+      >
+        {photo ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img src={photo} alt={name || "Rasm"} className="absolute inset-0 size-full object-cover" />
+        ) : (
+          <ImagePlus className="size-4" />
+        )}
+      </button>
+      <div className="text-[11px] leading-relaxed text-ivory-dim/50">
+        {photo ? (
+          <button type="button" onClick={onClear} className="text-ivory-dim/60 underline-offset-2 hover:text-red-300 hover:underline">
+            Rasmni olib tashlash
+          </button>
+        ) : (
+          <span>Portret rasmi (ixtiyoriy) — vinetkada polaroid bo‘lib chiqadi</span>
+        )}
+      </div>
+      <input
+        ref={input}
+        type="file"
+        accept="image/*"
+        className="hidden"
+        onChange={(e) => {
+          const f = e.target.files?.[0];
+          if (f) onFile(f);
+          e.target.value = "";
+        }}
+      />
     </div>
   );
 }

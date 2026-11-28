@@ -1,5 +1,6 @@
 import { Reveal } from "@/components/ui/Reveal";
 import type { Vignette } from "@/lib/types";
+import { ScrollWords } from "./ScrollWords";
 import { initials } from "./shared";
 
 export function Letter({ v }: { v: Vignette }) {
@@ -71,15 +72,15 @@ export function Letter({ v }: { v: Vignette }) {
                 style={{ color: "var(--v-ink)", opacity: 0.88 }}
               >
                 {paragraphs.map((p, i) => (
-                  <p key={i}>{p}</p>
+                  <ScrollWords key={i} text={p} />
                 ))}
               </div>
               {v.letter.signature && (
                 <p
-                  className="mt-8 font-serif text-2xl italic"
+                  className="mt-8 -rotate-2 font-hand text-4xl"
                   style={{ color: "var(--v-accent)" }}
                 >
-                  — {v.letter.signature}
+                  {v.letter.signature}
                 </p>
               )}
             </div>

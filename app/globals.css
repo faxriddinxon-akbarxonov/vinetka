@@ -3,6 +3,7 @@
 @theme {
   --font-sans: "Manrope", ui-sans-serif, system-ui, -apple-system, sans-serif;
   --font-serif: "Cormorant Garamond", "Times New Roman", ui-serif, Georgia, serif;
+  --font-hand: "Caveat", "Segoe Print", cursive;
 
   --color-ink: #090b0e;
   --color-ink-2: #0e1116;
@@ -115,6 +116,8 @@
   --v-accent: #d9b97b;
   --v-accent-deep: #b08d4f;
   --v-line: rgba(246, 240, 228, 0.14);
+  --v-photo: none;
+  --v-paper: #f4ecdd;
   background-color: var(--v-bg);
   color: var(--v-ink);
   font-family: var(--font-sans);
@@ -160,6 +163,34 @@
 }
 .lift:hover {
   transform: translateY(-4px);
+}
+
+/* gold-foil embossed lettering on the album cover */
+.emboss {
+  background: linear-gradient(170deg, #fff3cf 0%, #e7c983 40%, #a8823f 70%, #f3dca0 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 1px 0 rgba(0, 0, 0, 0.55)) drop-shadow(0 -1px 0 rgba(255, 240, 200, 0.15));
+}
+
+/* moving film grain over the whole vignette — the "old footage" feel */
+.film-grain {
+  position: fixed;
+  inset: -50%;
+  z-index: 60;
+  pointer-events: none;
+  opacity: 0.07;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23g)'/%3E%3C/svg%3E");
+  animation: grain 0.9s steps(6) infinite;
+}
+@keyframes grain {
+  0% { transform: translate(0, 0); }
+  20% { transform: translate(-3%, 2%); }
+  40% { transform: translate(2%, -3%); }
+  60% { transform: translate(-2%, -1%); }
+  80% { transform: translate(3%, 3%); }
+  100% { transform: translate(0, 0); }
 }
 
 /* ---------- motion ---------- */
@@ -245,7 +276,8 @@
   }
   .animate-marquee,
   .animate-floaty,
-  .fade-up {
+  .fade-up,
+  .film-grain {
     animation: none;
   }
 }

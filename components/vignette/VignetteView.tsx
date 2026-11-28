@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 import { themeStyle } from "@/lib/themes";
 import type { Vignette } from "@/lib/types";
+import { AlbumIntro } from "./AlbumIntro";
 import { Closing } from "./Closing";
 import { Cover } from "./Cover";
 import { Graduates } from "./Graduates";
@@ -28,8 +29,10 @@ export function VignetteView({ v }: { v: Vignette }) {
   return (
     <div className="vignette min-h-screen" style={style}>
       <VignetteBar v={v} />
+      <div aria-hidden className="film-grain" />
       <main>
         <Cover v={v} />
+        <AlbumIntro v={v} />
         <Letter v={v} />
         <Graduates v={v} />
         <Teachers v={v} />

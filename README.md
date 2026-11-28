@@ -85,19 +85,37 @@ public/images/             # demo rasmlar
 | Maydon | Izoh |
 | --- | --- |
 | `slug` | Havola nomi: faqat `a-z`, `0-9`, `-` |
-| `theme` | `oltin` \| `tong` \| `yulduz` \| `shaftoli` |
+| `theme` | `oltin` \| `tong` \| `yulduz` \| `shaftoli` \| `albom` |
 | `school`, `overline`, `className`, `graduationYear`, `motto` | Qopqoq matnlari |
 | `coverImage`, `coverPosition` | Qopqoq rasmi va uning markazi |
 | `letter` | Sinf rahbari xati (sarlavha, matn, imzo, lavozim) |
-| `graduates[]` | `{ name, role, quote }` |
-| `teachers[]` | `{ name, role, quote }` |
+| `graduates[]` | `{ name, role, quote, photo? }` — `photo` bo‘lsa polaroid rasmida chiqadi |
+| `teachers[]` | `{ name, role, quote, photo? }` |
 | `memories[]` | `{ type: "photo" \| "video", src, poster?, title?, caption?, date?, ratio? }` |
-| `timeline[]` | `{ year, title, text }` |
+| `timeline[]` | `{ year, title, text, photo? }` — kino lentasi kadri |
 | `wishes[]` | Boshlang‘ich tabriklar |
 | `closing`, `contact`, `audioUrl` | Yakun va aloqa |
 
 To‘ldirilmagan maydonlar xavfsiz — `lib/normalize.ts` bo‘sh ro‘yxatlarni
 tashlab yuboradi, sahifa buzilmaydi.
+
+## Animatsiyali tajriba (scroll)
+
+Vinetka oddiy sayt emas, varaqlanadigan albom kabi ishlaydi:
+
+1. **Albom ochilishi** (`AlbumIntro`) — scroll qilganda charm muqovali albom 3D
+   ochiladi: chap varaqda bag‘ishlov, o‘ngda sinf rasmi polaroid ko‘rinishida.
+2. **Xat** — ustoz xatining so‘zlari scroll bilan birma-bir “siyoh bo‘lib”
+   paydo bo‘ladi, imzo qo‘lyozma shriftda (Caveat).
+3. **Polaroid devori** — bitiruvchilar sochilib tushib, qiyshiq yopishtirilgan
+   polaroidlar bo‘lib joylashadi; bosilsa katta kartochka ochiladi (← → Esc).
+4. **Xotiralar** — har bir surat eski polaroid kabi “chiqib keladi” (oqish → rangli).
+5. **Yillar lentasi** — bo‘lim qotadi va kino plyonkasi yonga suriladi.
+6. **Yakun** — konfetti va bitiruv qalpoqchalari otiladi.
+7. Butun sahifa ustida yengil harakatlanuvchi kino donadorligi (film grain).
+
+`prefers-reduced-motion` yoqilgan qurilmalarda barcha animatsiyalar o‘chadi va
+kontent oddiy, statik ko‘rinishda chiqadi.
 
 ## Dizayn uslublari
 
@@ -109,8 +127,10 @@ Barcha ranglar CSS o‘zgaruvchilari orqali beriladi (`lib/themes.ts`):
 | `tong` | Tong | Yorug‘, bosma albom hissi |
 | `yulduz` | Yulduzlar | Tungi osmon, kumush, zamonaviy |
 | `shaftoli` | Shaftoli | Issiq terrakota, samimiy |
+| `albom` | Eski albom | Sarg‘aygan qog‘oz, sepiya rasmlar, qo‘lyozma |
 
-Yangi uslub qo‘shish: `lib/themes.ts` ga bitta obyekt (7 ta CSS o‘zgaruvchisi)
+Yangi uslub qo‘shish: `lib/themes.ts` ga bitta obyekt (9 ta CSS o‘zgaruvchisi,
+jumladan `--v-photo` — rasmlarga beriladigan filtr, `--v-paper` — polaroid/albom qog‘ozi rangi)
 va `lib/types.ts` dagi `ThemeId` ga qiymat qo‘shish kifoya. Butun sahifa,
 konstruktor va landing avtomatik yangilanadi.
 

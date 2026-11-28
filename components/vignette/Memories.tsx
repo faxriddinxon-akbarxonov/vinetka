@@ -1,5 +1,6 @@
 "use client";
 
+import { motion, useReducedMotion } from "framer-motion";
 import { Play } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
@@ -17,6 +18,7 @@ const RATIO: Record<NonNullable<Memory["ratio"]>, string> = {
 
 export function Memories({ v }: { v: Vignette }) {
   const [index, setIndex] = useState<number | null>(null);
+  const reduce = useReducedMotion();
   if (!v.memories.length) return null;
 
   return (
@@ -58,14 +60,31 @@ export function Memories({ v }: { v: Vignette }) {
                   style={{ borderColor: "var(--v-line)" }}
                   aria-label={`${m.title || "Xotira"} — katta ochish`}
                 >
-                  <Image
-                    src={poster}
-                    alt={m.title || "Xotira"}
-                    fill
-                    unoptimized={isInlineImage(poster)}
-                    sizes="(max-width: 640px) 50vw, 33vw"
-                    className="object-cover transition-transform duration-[1.4s] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.05]"
-                  />
+                  {/* the print "develops": washed-out and soft, then full colour */}
+                  <motion.div
+                    className="absolute inset-0"
+                    initial={
+                      reduce
+                        ? false
+                        : { filter: "brightness(1.9) saturate(0) blur(6px)", scale: 1.08 }
+                    }
+                    whileInView={{
+                      filter: "brightness(1) saturate(1) blur(0px)",
+                      scale: 1,
+                    }}
+                    viewport={{ once: true, margin: "-60px" }}
+                    transition={{ duration: 2.2, ease: [0.22, 1, 0.36, 1], delay: (i % 3) * 0.12 }}
+                  >
+                    <Image
+                      src={poster}
+                      alt={m.title || "Xotira"}
+                      fill
+                      unoptimized={isInlineImage(poster)}
+                      sizes="(max-width: 640px) 50vw, 33vw"
+                      className="object-cover transition-transform duration-[1.4s] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.05]"
+                      style={{ filter: "var(--v-photo)" }}
+                    />
+                  </motion.div>
                   <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent opacity-90 transition-opacity duration-500 group-hover:opacity-100" />
 
                   {m.type === "video" && (

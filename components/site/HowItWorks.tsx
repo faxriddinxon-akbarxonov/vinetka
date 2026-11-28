@@ -12,7 +12,7 @@ const STEPS = [
   {
     n: "02",
     title: "Dizaynni tanlang",
-    text: "To‘rt uslubdan birini tanlaysiz, ranglar va shiorni tasdiqlaysiz. Bir kunda tayyor namuna ko‘rasiz.",
+    text: "Besh uslubdan birini tanlaysiz, ranglar va shiorni tasdiqlaysiz. Bir kunda tayyor namuna ko‘rasiz.",
     meta: "1 kun",
   },
   {

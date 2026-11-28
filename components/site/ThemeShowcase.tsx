@@ -22,7 +22,7 @@ export function ThemeShowcase() {
             <span className="eyebrow text-gold">Dizayn</span>
             <span className="h-px w-12 bg-gold/40" />
             <span className="text-[10px] uppercase tracking-[0.24em] text-ivory-dim/40">
-              01 — 04
+              01 — {String(THEME_LIST.length).padStart(2, "0")}
             </span>
           </div>
 
@@ -32,7 +32,7 @@ export function ThemeShowcase() {
           </h2>
 
           <p className="mt-6 max-w-md text-[14.5px] leading-relaxed text-ivory-dim/75">
-            Vinetkaning dizayni — sizning hikoyangizning ohangi. To‘rt tayyor
+            Vinetkaning dizayni — sizning hikoyangizning ohangi. Besh tayyor
             uslubdan birini tanlang, ranglarni almashtiring va natijani shu
             yerning o‘zida ko‘ring. Maktab brendingizga moslab ham bera olamiz.
           </p>
